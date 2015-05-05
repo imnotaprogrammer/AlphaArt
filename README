@@ -1,0 +1,2 @@
+Type "make" to build.
+Then type "./fp <FILE NAME> <HEADER_GUARD_NAME>", replace the <XXXX> appropriately.
