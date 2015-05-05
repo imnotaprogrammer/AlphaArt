@@ -12,6 +12,12 @@ int main(int argc, char** argv)
     string filename;	
     string headerguard;
 
+    if(argc != 3)
+    {
+	cerr << "USAGE: <FILENAME> <HEADER_GUARD_NAME>" << "\n";
+	exit(1);
+    }
+
     filename = argv[1];
     headerguard = argv[2];  
 
