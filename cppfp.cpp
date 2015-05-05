@@ -10,9 +10,15 @@ using namespace std;
 int main(int argc, char** argv)
 {
     string filename;	
+    string headerguard;
+
     filename = argv[1];
+    headerguard = argv[2];  
 
     ofstream out(filename);
+
+    out << "#ifndef " << headerguard << "\n"
+        << "#define " << headerguard << "\n\n";
 
     out << "#include <iostream>\n\n"
     	<< "using namespace std;\n\nint main(int argc, char** argv)\n"
@@ -22,7 +28,7 @@ int main(int argc, char** argv)
         << "}\n\n"
         << "\n";
         
-        
+    out << "#endif\n";    
     return 0;
 }
 
