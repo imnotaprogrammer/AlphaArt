@@ -25,9 +25,18 @@ int main(int argc, char** argv)
 	{
 		for(int j = 0; j < matrix; j++)
 		{
-			cout << lar[i][j] << " " << "\n";
+			if((i*j) % 9 == 0)
+			{
+				cout << i << " " << j << " " << lar[i][j] << " " << "\n";
+			}
 		}
 	}
+
+
+
+
+	
+
 
 	
 
